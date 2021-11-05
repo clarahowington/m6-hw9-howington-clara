@@ -1,12 +1,11 @@
-// API key: ce57e369227af8466e0b1a3e66b17f67
-
+// API key: 2eae42e7e9b95fb7d967fb8495a714a6
 // JS takes in user data
     // Uses data for API call
     // Return data and parse info for UI
 
 const api = {
-  key: "ce57e369227af8466e0b1a3e66b17f67",
-  base: "https://api.openweathermap.org/data/2.5/weather?q='&appid=ce57e369227af8466e0b1a3e66b17f67"
+  key: "2eae42e7e9b95fb7d967fb8495a714a6",
+  base: "https://api.openweathermap.org/data/2.5/weather?q='&appid=2eae42e7e9b95fb7d967fb8495a714a6"
 }
 
 var searchBar = document.getElementById('searchUser');
@@ -19,7 +18,7 @@ button.addEventListener('click', () => {
 async function getResults(location){
     let response = await fetch('https://api.openweathermap.org/data/2.5/weather?q=' +
       location +
-      '&units=imperial&appid=ce57e369227af8466e0b1a3e66b17f67')
+      '&units=imperial&appid=2eae42e7e9b95fb7d967fb8495a714a6')
     .then(weather => {
             return weather.json();
           }).then(displayResults);
